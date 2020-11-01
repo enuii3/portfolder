@@ -1,0 +1,15 @@
+current directory: /Users/nxxxi/Desktop/nonress/portfolder/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.9/ext/bootsnap
+/Users/nxxxi/.rbenv/versions/2.7.0/bin/ruby -I /Users/nxxxi/.rbenv/versions/2.7.0/lib/ruby/2.7.0 -r ./siteconf20201101-36186-1wek8p2.rb extconf.rb
+creating Makefile
+
+current directory: /Users/nxxxi/Desktop/nonress/portfolder/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.9/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/nxxxi/Desktop/nonress/portfolder/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.9/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/nxxxi/Desktop/nonress/portfolder/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.9/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20201101-36186-6nt0xx/bootsnap
