@@ -29,4 +29,3 @@ RSpec.describe User, type: :model do
     end.to raise_error(ActiveRecord::RecordNotUnique)
   end
 end
-

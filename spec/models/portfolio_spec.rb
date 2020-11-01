@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Portfolio, type: :model do
- let(:portfolio) { FactoryBot.create(:portfolio) }
+  let(:portfolio) { FactoryBot.create(:portfolio) }
 
   it 'is valid with title, description, github and url' do
     expect(portfolio).to be_valid
