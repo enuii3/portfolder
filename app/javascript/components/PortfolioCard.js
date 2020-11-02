@@ -39,8 +39,8 @@ export default function PortfolioCard(user) {
       {portfolios.map(portfolio => {
         return(
           <li key={portfolio.id}>
-            <Card className={classes.root} onClick={() => {window.open(portfolio.url, '_blank')}}>
-              <CardActionArea>
+            <Card className={classes.root} >
+              <CardActionArea onClick={() => {window.open(portfolio.url, '_blank')}}>
                 <CardMedia
                   className={classes.media}
                   image={portfolio.image}
