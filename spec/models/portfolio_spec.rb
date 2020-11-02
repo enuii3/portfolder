@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Portfolio, type: :model do
   let(:portfolio) { FactoryBot.create(:portfolio) }
 
-  it 'is valid with title, description, github and url' do
+  it 'is valid with title, description, github, image, and url' do
     expect(portfolio).to be_valid
   end
 
@@ -19,6 +19,11 @@ RSpec.describe Portfolio, type: :model do
 
   it 'is invalid without github' do
     portfolio.update(github: nil)
+    expect(portfolio).to be_invalid
+  end
+
+  it 'is invalid without image' do
+    portfolio.update(image: nil)
     expect(portfolio).to be_invalid
   end
 
