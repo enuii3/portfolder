@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom'
 
-import PortfolioCard from '../components/PortfolioCard'
+import App from '../components/App'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <PortfolioCard />,
+    <App/>,
     document.body.appendChild(document.createElement('div')),
   )
 })

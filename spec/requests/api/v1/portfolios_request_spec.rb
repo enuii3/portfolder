@@ -6,15 +6,15 @@ RSpec.describe 'Api::V1::Portfolios', type: :request do
   let(:jsons) { JSON.parse(response.body) }
 
   describe '#index' do
-    context 'when get /api/v1/questions' do
+    context 'when get /api/v1/portfolios' do
       before do
         portfolios
         get '/api/v1/portfolios/'
       end
 
-      it 'expect keys that id, title, description, image, github, url' do
+      it 'expect keys that id, title, description, url github image userName updatedAt' do
         jsons.each do |json|
-          expect(json.keys).to eq(%w[id title description github url image])
+          expect(json.keys).to eq(%w[id title description url github image userName updatedAt])
         end
       end
 
