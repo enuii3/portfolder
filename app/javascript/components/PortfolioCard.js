@@ -10,6 +10,8 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import axios from 'axios'
 
+import UserHeader from './UserHeader'
+
 const useStyles = makeStyles({
   root: {
     maxWidth: '50%',
@@ -21,7 +23,7 @@ const useStyles = makeStyles({
 })
 
 
-export default function PortfolioCard(user) {
+export default function PortfolioCard() {
   const classes = useStyles();
   const [ portfolios, setPortfolios ] = useState([])
 
@@ -40,6 +42,7 @@ export default function PortfolioCard(user) {
         return(
           <li key={portfolio.id}>
             <Card className={classes.root} >
+              <UserHeader userName={portfolio.userName} updatedAt={portfolio.updatedAt}/>
               <CardActionArea onClick={() => {window.open(portfolio.url, '_blank')}}>
                 <CardMedia
                   className={classes.media}
