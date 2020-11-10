@@ -20,7 +20,7 @@ export default function PortfolioIndexPage() {
       {portfolios.map(portfolio => {
         return(
           <li key={portfolio.id}>
-            <PortfolioCard portfolio={portfolio} />
+            <PortfolioCard portfolio={portfolio} isVisibleUserHeader={true} />
           </li>
         )})}
     </ul>
