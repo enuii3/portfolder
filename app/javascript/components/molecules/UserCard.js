@@ -10,7 +10,7 @@ import axios from 'axios'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: '50%',
+    maxWidth: 800,
     margin: 'auto',
   },
   avatar: {
