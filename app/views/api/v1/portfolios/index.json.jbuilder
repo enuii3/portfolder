@@ -7,6 +7,7 @@ json.array! @portfolios do |portfolio|
   json.github portfolio.github
   json.url portfolio.url
   json.image portfolio.image
+  json.userId portfolio.user.id
   json.userName portfolio.user.name
   json.updatedAt l(portfolio_updated_at, format: :long)
 end
