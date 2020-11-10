@@ -5,8 +5,8 @@ import {
   Route
 } from 'react-router-dom'
 
-import PortfolioCard from './PortfolioCard'
-import UserCard from './UserCard'
+import PortfolioCard from './molecules/PortfolioCard'
+import UserCard from './molecules/UserCard'
 
 export default function App(){
   return(
