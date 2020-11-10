@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import axios from 'axios'
 
-import UserHeader from './UserHeader'
+import UserHeader from '../atoms/UserHeader'
 
 const useStyles = makeStyles({
   root: {
