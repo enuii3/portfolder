@@ -8,8 +8,8 @@ RSpec.describe 'Api::V1::Users', type: :request do
     context 'when get /api/v1/users/:id' do
       before { get "/api/v1/users/#{user.id}" }
 
-      it 'expect keys that id name selfIntroduction' do
-        expect(json.keys).to eq(%w[id name selfIntroduction])
+      it 'expect keys that id name selfIntroduction and portfolios' do
+        expect(json.keys).to eq(%w[id name selfIntroduction portfolios])
       end
 
       it 'returned 200 http response status' do

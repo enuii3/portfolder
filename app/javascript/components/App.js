@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 
 import PortfolioIndexPage from './pages/PortfolioIndexPage'
-import UserCard from './molecules/UserCard'
+import UserPage from './pages/UserPage'
 
 export default function App(){
   return(
@@ -16,7 +16,7 @@ export default function App(){
           <PortfolioIndexPage />
         </Route>
         <Route path={'/users/:id'}>
-          <UserCard />
+          <UserPage />
         </Route>
       </Switch>
     </Router>

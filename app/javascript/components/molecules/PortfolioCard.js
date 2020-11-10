@@ -24,15 +24,18 @@ const useStyles = makeStyles({
 export default function PortfolioCard(props) {
   const classes = useStyles();
   const portfolio = props.portfolio
+  const isVisibleUserHeader = props.isVisibleUserHeader
 
   return (
     <>
       <Card className={classes.root} >
-        <UserHeader
-          userId={portfolio.userId}
-          userName={portfolio.userName}
-          updatedAt={portfolio.updatedAt}
-        />
+        { isVisibleUserHeader &&
+          <UserHeader
+            userId={portfolio.userId}
+            userName={portfolio.userName}
+            updatedAt={portfolio.updatedAt}
+          />
+        }
         <CardActionArea onClick={() => {window.open(portfolio.url, '_blank')}}>
           <CardMedia
             className={classes.media}
