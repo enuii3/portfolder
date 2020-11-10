@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 
 import Header from './organisms/Header'
+import Footer from './organisms/Footer'
 import PortfolioIndexPage from './pages/PortfolioIndexPage'
 import UserPage from './pages/UserPage'
 
@@ -21,6 +22,7 @@ export default function App(){
           <UserPage />
         </Route>
       </Switch>
+    <Footer />
     </Router>
   )
 }
