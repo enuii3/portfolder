@@ -12,9 +12,9 @@ RSpec.describe 'Api::V1::Portfolios', type: :request do
         get '/api/v1/portfolios/'
       end
 
-      it 'expect keys that id, title, description, url github image userName updatedAt' do
+      it 'expect keys that id, title, description, github url image userName updatedAt' do
         jsons.each do |json|
-          expect(json.keys).to eq(%w[id title description url github image userName updatedAt])
+          expect(json.keys).to eq(%w[id title description github url image userId userName updatedAt])
         end
       end
 
