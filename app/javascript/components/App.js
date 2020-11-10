@@ -5,12 +5,15 @@ import {
   Route
 } from 'react-router-dom'
 
+import Header from './organisms/Header'
+import Footer from './organisms/Footer'
 import PortfolioIndexPage from './pages/PortfolioIndexPage'
 import UserPage from './pages/UserPage'
 
 export default function App(){
   return(
     <Router>
+      <Header />
       <Switch>
         <Route exact path={'/'}>
           <PortfolioIndexPage />
@@ -19,6 +22,7 @@ export default function App(){
           <UserPage />
         </Route>
       </Switch>
+    <Footer />
     </Router>
   )
 }
