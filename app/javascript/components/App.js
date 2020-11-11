@@ -7,8 +7,9 @@ import {
 
 import Header from './organisms/Header'
 import Footer from './organisms/Footer'
-import PortfolioIndexPage from './pages/PortfolioIndexPage'
 import UserPage from './pages/UserPage'
+import PortfolioIndexPage from './pages/PortfolioIndexPage'
+import CreatePortfolioPage from './pages/CreatePortfolioPage'
 
 export default function App(){
   return(
@@ -20,6 +21,9 @@ export default function App(){
         </Route>
         <Route path={'/users/:id'}>
           <UserPage />
+        </Route>
+        <Route path={'/portfolios/new'}>
+          <CreatePortfolioPage />
         </Route>
       </Switch>
     <Footer />
