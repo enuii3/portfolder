@@ -1,0 +1,18 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+      portfolio: ポートフォリオ
+    attributes:
+      user:
+        name: 名前
+        email: メールアドレス
+        encrypted_password: パスワード
+      portfolio:
+        title: ポートフォリオのタイトル
+        description: ポートフォリオの説明
+        github: GithubのURL
+        url: ポートフォリオのURL
+        image: ポートフォリオのスクリーンショット
+        user: ポートフォリオの投問稿者
+
