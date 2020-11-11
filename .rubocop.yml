@@ -31,5 +31,5 @@ Style/ClassAndModuleChildren:
 #一つのブロックあたりの25行制限を解除
 Metrics/BlockLength:
   Exclude:
-    - 'spec/requests/api/v1/**'
+    - 'spec/requests/api/v1/**/**'
 
