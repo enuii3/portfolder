@@ -53,7 +53,7 @@ RSpec.describe 'Api::V1::Portfolios::Post', type: :request do
       end
 
       it 'expect response message ポートフォリオのタイトルを入力してください' do
-        expect(json).to include('ポートフォリオのタイトルを入力してください')
+        expect(json['title']).to include('ポートフォリオのタイトルを入力してください')
       end
     end
 
@@ -68,7 +68,7 @@ RSpec.describe 'Api::V1::Portfolios::Post', type: :request do
       end
 
       it 'expect response message ポートフォリオの説明を入力してください' do
-        expect(json).to include('ポートフォリオの説明を入力してください')
+        expect(json['description']).to include('ポートフォリオの説明を入力してください')
       end
     end
 
@@ -83,7 +83,7 @@ RSpec.describe 'Api::V1::Portfolios::Post', type: :request do
       end
 
       it 'expect response message GithubのURLを入力してください' do
-        expect(json).to include('GithubのURLを入力してください')
+        expect(json['github']).to include('GithubのURLを入力してください')
       end
     end
 
@@ -98,7 +98,7 @@ RSpec.describe 'Api::V1::Portfolios::Post', type: :request do
       end
 
       it 'expect response message ポートフォリオのURLを入力してください' do
-        expect(json).to include('ポートフォリオのURLを入力してください')
+        expect(json['url']).to include('ポートフォリオのURLを入力してください')
       end
     end
 
@@ -113,7 +113,7 @@ RSpec.describe 'Api::V1::Portfolios::Post', type: :request do
       end
 
       it 'expect response message ポートフォリオのスクリーンショットを入力してください' do
-        expect(json).to include('ポートフォリオのスクリーンショットを入力してください')
+        expect(json['image']).to include('ポートフォリオのスクリーンショットを入力してください')
       end
     end
 

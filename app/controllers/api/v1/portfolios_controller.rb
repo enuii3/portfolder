@@ -8,7 +8,9 @@ class Api::V1::PortfoliosController < ApplicationController
     if portfolio.save
       render json: portfolio
     else
-      render json: portfolio.errors.full_messages, status: :unprocessable_entity
+      errors_keys = portfolio.errors.keys
+      errors = [errors_keys, portfolio.errors.full_messages].transpose.to_h
+      render json: errors, status: :unprocessable_entity
     end
   end
 
